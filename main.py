@@ -9,7 +9,7 @@ main = Blueprint('main', __name__)
 @main.route('/')
 def index():
 #     return render_template('index.html')
-    return {"index": "what"}
+    return render_template('addaccts.html')
 
 # @main.route('/profile')
 # @login_required
@@ -74,4 +74,5 @@ def api_change_bal():
         return {'name': 'amt'}
     else:
         #respond w error?
+
         return {'name': 'yes'}
